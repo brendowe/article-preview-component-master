@@ -1,46 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Article preview component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | Article preview component</title>
 
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="img"></div>
 
-  <div id="container">
+      <div id="container-content">
+        <h1>
+          Shift the overall look and feel by adding these wonderful touches to
+          furniture in your home
+        </h1>
+        <p>
+          Ever been in a room and felt like something was missing? Perhaps it
+          felt slightly bare and uninviting. I’ve got some simple tips to help
+          you make any room feel complete.
+        </p>
 
-    <div id="img">
-      
-    </div>
-
-    <div id="container-content">
-      <h1>
-        Shift the overall look and feel by adding these wonderful
-        touches to furniture in your home
-      </h1>
-      <p>
-        Ever been in a room and felt like something was missing? Perhaps
-        it felt slightly bare and uninviting. I’ve got some simple tips
-        to help you make any room feel complete.
-      </p>
-      <footer>
-      
-        <img src="images/avatar-michelle.jpg" alt="" id="img1">
-        <div>
-          <p id="user">Michelle Appleton</p>
-          <p id="data">28 Jun 2020</p>
+        <div id="links">
+          <img src="images/avatar-michelle.jpg" alt="" id="img1" />
+          <div>
+            <p id="user">Michelle Appleton</p>
+            <p id="data">28 Jun 2020</p>
+          </div>
+          <button id="links-arrow" class="btn">
+            <img src="images/icon-share.svg" alt="" />
+          </button>
         </div>
-        <img src="images/icon-share.svg" alt="" id="img2">
-      </footer>
+
+        <div id="share">
+          <div>
+            <p>S H A R E</p>
+            <a href="#"><img src="images/icon-facebook.svg" alt="" /></a>
+            <a href="#"><img src="images/icon-twitter.svg" alt="" /></a>
+            <a href="#"><img src="images/icon-pinterest.svg" alt="" /></a>
+          </div>
+
+          <button id="share-arrow" class="btn">
+            <img src="images/icon-share.svg" alt="" />
+          </button>
+        </div>
+      </div>
     </div>
 
-  </div>
-
-</body>
+    <script src="codigo.js"></script>
+  </body>
 </html>
