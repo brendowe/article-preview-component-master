@@ -87,7 +87,6 @@ p,
   justify-content: space-evenly;
 }
 
-
 #share p {
   display: inline-block;
   font-size: 16px;
@@ -104,7 +103,14 @@ p,
   padding: 8px;
 }
 
-#share-arrow, #links-arrow {
+#f {
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+}
+
+#share-arrow,
+#links-arrow {
   height: 30px;
   width: 30px;
   border-radius: 50%;
@@ -145,9 +151,9 @@ p,
 
   #share {
     width: 200px;
-    height: 45px;
+    height: 55px;
     border-radius: 10px;
-    display: flex;
+    display: none;
     position: relative;
     left: 180px;
     bottom: 120px;

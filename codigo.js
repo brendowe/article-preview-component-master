@@ -5,12 +5,20 @@ function compartilhar() {
   const links = document.getElementById("links");
   const share = document.getElementById("share");
 
-  if (links.style.display == "flex") {
-    links.style.display = "none";
-    share.style.display = "flex";
+  if (window.matchMedia("(max-width:799px").matches) {
+    if (links.style.display == "flex") {
+      links.style.display = "none";
+      share.style.display = "flex";
+    } else {
+      share.style.display = "none";
+      links.style.display = "flex";
+    }
   } else {
-    share.style.display = "none";
-    links.style.display = "flex";
+    if (share.style.display == "none"){
+      share.style.display = "flex";
+    } else {
+      share.style.display = "none"
+    }
   }
 }
 
