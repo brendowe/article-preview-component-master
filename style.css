@@ -160,6 +160,18 @@ p,
     margin: auto;
   }
 
+  #share::after {
+    content: '';
+    width: 25px;
+    height: 25px;
+    display: block;
+    background-color: var(--cor1);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 42px;
+    left: auto;
+  }
+
   #share p {
     font-size: 12px;
     margin: auto;
